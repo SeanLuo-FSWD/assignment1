@@ -29,77 +29,84 @@ namespace assignment1.Data
             }
         }
 
-        public static List<Province> GetProvinces()
-        {
-            List<Province> Provinces = new List<Province>() {
-            new Province() {
-                ProvinceCode="BC",
-                ProvinceName="British Columbia",
-            },
-            new Province() {
-                ProvinceCode="ON",
-                ProvinceName="Ontario",
-            },
-            new Province() {
-                ProvinceCode="QC",
-                ProvinceName="Quebec",
-            },
-        };
-
-            return Provinces;
-        }
-
         public static List<Student> GetStudents(ApplicationDbContext context)
         {
             List<Student> Students = new List<Student>() {
             new Student {
-                CityName = "Vancouver",
-                Population = 2000000,
-                ProvinceCode = "BC",
+                FirstName = "Jim",
+                LastName = "Potter",
+                MobileNumber = "778-123-4556",
+                EmailAddress = "jim@gmail.com",
+                City = "Vancouver",
+                Specialization = "IT"
             },
             new Student {
-                CityName = "Victoria",
-                Population = 500000,
-                ProvinceCode = "BC",
+                FirstName = "Jane",
+                LastName = "Douglas",
+                MobileNumber = "778-678-9876",
+                EmailAddress = "jane@gmail.com",
+                City = "Surrey",
+                Specialization = "Nursing"
             },
             new Student {
-                CityName = "Kamloops",
-                Population = 50000,
-                ProvinceCode = "BC",
+                FirstName = "Tom",
+                LastName = "Gardner",
+                MobileNumber = "778-898-5678",
+                EmailAddress = "tom@gmail.com",
+                City = "Kamloops",
+                Specialization = "Architect"
             },
-            new City {
-                CityName = "Toronto",
-                Population = 6000000,
-                ProvinceCode = "ON",
+            new Student {
+                FirstName = "Ann",
+                LastName = "Lee",
+                MobileNumber = "778-676-1234",
+                EmailAddress = "ann@gmail.com",
+                City = "Edmonton",
+                Specialization = "Doctor"
             },
-            new City {
-                CityName = "Hamilton",
-                Population = 30000,
-                ProvinceCode = "ON",
+            new Student {
+                FirstName = "James",
+                LastName = "Jones",
+                MobileNumber = "778-888-4567",
+                EmailAddress = "james@gmail.com",
+                City = "Langley",
+                Specialization = "Plumber"
             },
-            new City {
-                CityName = "Ottawa",
-                Population = 1000000,
-                ProvinceCode = "ON",
+            new Student {
+                FirstName = "Susan",
+                LastName = "Taylor",
+                MobileNumber = "778-656-0999",
+                EmailAddress = "susan@gmail.com",
+                City = "Kelowna",
+                Specialization = "Singer"
             },
-            new City {
-                CityName = "Montreal",
-                Population = 4000000,
-                ProvinceCode = "QC",
+            new Student {
+                FirstName = "Peter",
+                LastName = "White",
+                MobileNumber = "778-666-9090",
+                EmailAddress = "peter@gmail.com",
+                City = "White Rock",
+                Specialization = "Teacher"
             },
-            new City {
-                CityName = "Quebec City",
-                Population = 50000,
-                ProvinceCode = "QC",
+            new Student {
+                FirstName = "Philip",
+                LastName = "Fox",
+                MobileNumber = "778-557-8765",
+                EmailAddress = "philip@gmail.com",
+                City = "Vancouver",
+                Specialization = "Athlete"
             },
-            new City {
-                CityName = "Gatineau",
-                Population = 30000,
-                ProvinceCode = "QC",
+            new Student {
+                FirstName = "Donna",
+                LastName = "Ray",
+                MobileNumber = "778-678-3457",
+                EmailAddress = "donna@gmail.com",
+                City = "Surrey",
+                Specialization = "Cashier"
             },
         };
 
-            return Cities;
+            return Students;
         }
     }
 }
