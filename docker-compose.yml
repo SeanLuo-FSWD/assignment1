@@ -4,19 +4,13 @@ services:
   db:
     image: mcr.microsoft.com/azure-sql-edge
 
-    volumes:
-      - sqlsystem:/var/opt/mssql/
-      - sqldata:/var/opt/sqlserver/data
-      - sqllog:/var/opt/sqlserver/log
-      - sqlbackup:/var/opt/sqlserver/backup
-
     ports:
       - "1433:1433"
     restart: always
 
     environment:
-      ACCEPT_EULA: Y
-      MSSQL_SA_PASSWORD: SqlExpress!
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "SqlExpress!"
 
   mvc:
     build:
